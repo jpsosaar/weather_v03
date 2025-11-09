@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    {{!--  Nombre de la Pestaña--}}
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+
+    {{!--  form es el texto que se pone en  /js/app.js en la linea document.querySelector('form')--}}
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form> 
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+        <p id="message-3"></p>
+        <p id="message-4"></p>
+        <p id="message-5"></p>
+        <p id="message-6"></p>
+        <p id="message-7"></p>
+
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
