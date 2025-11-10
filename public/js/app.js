@@ -26,7 +26,8 @@ weatherForm.addEventListener('submit',(e) => {
     messageFive.textContent = ''
     messageSix.textContent = ''
     messageSeven.textContent = ''
-    fetch('http://localhost:3000/weather?address='+location).then((response) => {
+//  fetch('http://localhost:3000/weather?address='+location).then((response) => {
+    fetch('https://weatherv03-production.up.railway.app/weather?address='+location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 console.log(data.error)
