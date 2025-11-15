@@ -3,7 +3,7 @@ const forecast = require('./utils/nforecast3.js')
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-//const { error } = require('console')
+const { error } = require('console')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -132,7 +132,7 @@ app.get('*', (req, res) => {
 
 // Start up the Server
 app.listen(port, () => {
-    console.log('Server is up on port: ' + port)
+    console.log('Server is up on port ' + port)
 })
 
 
